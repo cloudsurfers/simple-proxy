@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  app:
+    environment:
+      INTEGRATION_URI: ${INTEGRATION_URI}
+      RESPONSE_ON_SUCCESS: "{'statusText': 'OK'}"
+    image: cloudsurfers/simple-proxy:latest
+    networks:
+      - os_opensearch-net
+networks:
+    os_opensearch-net:
+        external: true

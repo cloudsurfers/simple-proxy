@@ -1,1 +1,1 @@
-# simple-proxy for OpenSearch notifications to Rocket.Chat integration API
+# Proxy for communication between OpenSearch and Rocket.Chat integration API
